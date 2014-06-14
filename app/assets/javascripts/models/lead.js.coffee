@@ -7,5 +7,5 @@ App.Lead = DS.Model.extend
   notes: DS.attr('string')
 
   fullName: ( ->
-    @get('firstName') + ' ' + @get('lastName')
+    "#{@get('firstName')} #{@get('lastName')}"
   ).property('firstName', 'lastName')
